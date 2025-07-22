@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css">
+  <title>Typing Speed Test</title>
+  
+</head>
+<body>
+  <div class="container">
+    <h1>Typing Speed Test</h1>
+
+    <div class="level-select">
+      <label for="level">Select Level: </label>
+      <select id="level">
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+   
+        
+      </select>
+    </div>
+
+    <div id="text-display"></div>
+
+    <textarea id="input-area" placeholder="Start typing here..." autofocus></textarea>
+
+    <div class="stats">
+      <p><strong>Time:</strong> <span id="timer">60</span> s</p>
+      <p><strong>WPM:</strong> <span id="wpm">0</span></p>
+      <p><strong>Accuracy:</strong> <span id="accuracy">0</span>%</p>
+    </div>
+
+    <button onclick="loadText()">Start</button>
+    <button id="next-btn" onclick="loadText()">Next Sentence</button>
+  </div>
+  
+  <footer style="position: absolute; bottom: 10px; width: 100%; text-align: center; font-size: 14px; color: white;">
+    © 2025 Ismail Shah | Built with ❤️ by 
+    <a href="https://github.com/ismail6174" target="_blank" style="color: #fff; text-decoration: underline;">ismail6174</a>
+  </footer>
+
+  <script src="app.js">
+    
+  </script>
+</body>
+</html>
